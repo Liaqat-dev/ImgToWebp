@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"/>
+    <title>Image to WebP Converter</title>
+    <link rel="stylesheet" href="./styles.css"/>
+
+</head>
+<body>
+<div class="card">
+    <h2>Image to WebP Converter</h2>
+    <form id="converterForm" enctype="multipart/form-data">
+        <label>Select Image</label>
+        <input type="file" name="image" accept="image/*" required/>
+        <div class="flex">
+            <div class="range">
+                <label>Compression Quality <span id="qualityValue" class="slider-value">80</span></label>
+                <input type="range" name="quality" min="1" max="100" value="80" id="qualitySlider"/>
+            </div>
+            <div class="range">
+                <label>Effort Level <span id="effortValue" class="slider-value">4</span></label>
+                <input type="range" name="effort" min="0" max="6" value="4" id="effortSlider"/>
+            </div>
+        </div>
+
+        <div class="flex">
+            <div class="options">
+                <label for="compression-type">Compression Type</label>
+                <select name="compression-type" id="compression-type">
+                    <option value="lossy">Lossy</option>
+                    <option value="lossless">Lossless</option>
+                    <option value="nearLossless">Near Lossless</option>
+
+                </select>
+            </div>
+            <div class="options">
+                <label for="preset">Preset</label>
+                <select name="preset" id="preset">
+                    <option value="">default</option>
+                    <option value="photo">photo</option>
+                    <option value="picture">picture</option>
+                    <option value="drawing">drawing</option>
+                    <option value="icon">icon</option>
+                    <option value="text">text</option>
+                </select>
+            </div>
+        </div>
+
+        <button type="submit">Convert & Download</button>
+    </form>
+    <div class="status" id="statusText"></div>
+</div>
+
+<script src="./index.js"></script>
+</body>
+</html>

@@ -1,0 +1,22 @@
+{
+  "name": "imgtowebp",
+  "version": "1.0.0",
+  "description": "Node Express App to compress images of any format into small sized webp",
+  "type": "commonjs",
+  "main": "index.js",
+  "scripts": {
+    "dev": "nodemon index.js"
+  },
+  "author": "Liaqat Ali",
+  "license": "ISC",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.18.2",
+    "morgan": "^1.10.0",
+    "multer": "^2.0.1",
+    "sharp": "^0.34.2",
+    "utils": "^0.3.1"
+  },
+  "devDependencies": {
+  }
+}

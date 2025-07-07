@@ -1,0 +1,89 @@
+
+body {
+    background-color: #f7f9fc;
+    font-family: 'Segoe UI', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.card {
+    background: white;
+    padding: 40px;
+    border-radius: 12px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 460px;
+}
+
+h2 {
+    text-align: center;
+    margin-bottom: 25px;
+    color: #333;
+}
+
+label {
+    font-weight: 500;
+    display: block;
+    margin-bottom: 6px;
+    margin-top: 16px;
+    color: #555;
+}
+
+input[type="file"],
+select,
+input[type="range"] {
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+input[type="checkbox"] {
+    margin-right: 6px;
+}
+
+button {
+    width: 100%;
+    padding: 12px;
+    margin-top: 20px;
+    font-size: 1rem;
+    background-color: #4f46e5;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+button:hover {
+    background-color: #3730a3;
+}
+
+.slider-value {
+    font-weight: bold;
+    float: right;
+}
+
+.inline-option {
+    display: flex;
+    align-items: center;
+    margin-top: 8px;
+}
+
+.status {
+    margin-top: 15px;
+    font-size: 0.95rem;
+    color: #666;
+    text-align: center;
+}
+
+.flex {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.range, .options {
+    width: 45%;
+}
